@@ -1,0 +1,23 @@
+﻿<Window x:Class="BaseConversion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Height="199" Width="445">
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="65,38,0,0" Name="textBoxInput" VerticalAlignment="Top" Width="177" TextChanged="textBoxInput_TextChanged" GotFocus="textBoxInput_GotFocus" />
+        <Button Content="Convert" Height="23" HorizontalAlignment="Right" Margin="0,38,21,0" Name="buttonConvert" VerticalAlignment="Top" Width="75" Click="buttonConvert_Click" DataContext="{Binding}" AllowDrop="True" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="262,38,0,0" Name="comboBoxFrom" VerticalAlignment="Top" Width="75" SelectionChanged="comboBoxFrom_SelectionChanged">
+            <ComboBoxItem>2</ComboBoxItem>
+            <ComboBoxItem>8</ComboBoxItem>
+            <ComboBoxItem>10</ComboBoxItem>
+            <ComboBoxItem>16</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="262,90,0,0" Name="comboBoxTo" VerticalAlignment="Top" Width="75" GotFocus="comboBoxTo_GotFocus">
+          
+        </ComboBox>
+        <Label Content="Input" Height="24" HorizontalAlignment="Left" Margin="18,38,0,0" Name="labelFrom" VerticalAlignment="Top" Width="47" />
+        <Label Content="Result" Height="24" HorizontalAlignment="Left" Margin="18,140,0,0" Name="labelTo" VerticalAlignment="Top" Width="47" />
+        <Label Content="" Height="24" Margin="65,140,21,0" Name="labelOutput" VerticalAlignment="Top" />
+        <Label Content="From Base" Height="24" HorizontalAlignment="Left" Margin="262,17,0,0" Name="label1" VerticalAlignment="Top" Width="75" />
+        <Label Content="To Base" Height="24" HorizontalAlignment="Left" Margin="262,69,0,0" Name="label2" VerticalAlignment="Top" Width="75" />
+    </Grid>
+</Window>
